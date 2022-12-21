@@ -1,4 +1,15 @@
+import java.lang.StringBuilder
+
 fun main(args: Array<String>) {
+    var n = 0
+    while (true) {
+        val screen = render(n)
+        display(screen)
+        n += 1
+        Thread.sleep(14)
+    }
+}
+
 fun render(n: Int): String {
     val width = 40
     val height = 80

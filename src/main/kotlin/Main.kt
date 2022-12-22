@@ -16,7 +16,7 @@ fun render(n: Int): String {
     val screen = StringBuilder()
     for (y in 0 until height) {
         for (x in 0 until width) {
-            if (x == n % width && y == 0) {
+            if (x == n % width && y == (n / width) % height) {
                 screen.append("*")
             } else {
                 screen.append(".")
